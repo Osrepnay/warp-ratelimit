@@ -89,10 +89,7 @@ pub async fn ratelimit_filter(
                     ip: addr_ip,
                 });
             }
-            Ok(warp::reply::with_status(
-                "".to_owned(),
-                StatusCode::OK,
-            ))
+            Ok(warp::reply::with_status("".to_owned(), StatusCode::OK))
         }
     });
     let ip_normal = warp::filters::addr::remote().and_then(move |addr: Option<SocketAddr>| {
@@ -136,10 +133,7 @@ pub async fn ratelimit_filter(
                         ip: addr_ip,
                     });
                 }
-                Ok(warp::reply::with_status(
-                    "".to_owned(),
-                    StatusCode::OK,
-                ))
+                Ok(warp::reply::with_status("".to_owned(), StatusCode::OK))
             } else {
                 Err(warp::reject::reject())
             }
