@@ -1,8 +1,13 @@
 [package]
 name = "warp_ratelimit"
-version = "0.1.0"
+version = "1.0.0"
 authors = ["Osrepnay"]
 edition = "2018"
+description = "A ratelimiter for the warp web server framework"
+homepage = "https://osrepnay.github.io/projects/warp-ratelimit"
+repository = "https://github.com/Osrepnay/warp-ratelimit"
+license = "MIT"
+keywords = ["warp"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
